@@ -1,0 +1,5 @@
+# Use an official PHP runtime
+FROM php:fpm-alpine3.19
+# Install any extensions you need
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+RUN docker-php-ext-enable mysqli
